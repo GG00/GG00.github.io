@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+    <script type="text/javascript" src="out.js"></script>
+
+	<script type="text/javascript" src="demo.js">
+		
+	</script>
+	<script type="text/javascript">
+	//alert("haha");
+	</script>
+	<script type="text/javascript">
+	var n = 12;
+	var nn2 = 12.4;
+	var str = "abc";
+	var flag = true;
+	var date = null;
+	var un;
+	var strr = 'abcc';
+	var date2 = new Date();
+	
+	//alert(typeof(date2));
+	//alert(typeof(strr));
+	var num = 13;
+	var num2 = new Number(12);
+	//alert(typeof(num2));
+	//alert(num == num2);
+	//alert(num2 instanceof Number);
+	s = 3710;
+	//alert("n="+s);
+	//alert(s/1000*1000);
+	//alert("12"-1);
+	//alert(null+1);
+	if(12){
+		//alert("hahaaaa");
+	}
+	var n = 3;
+	var m = "3";
+	//m = n++;
+	//alert("m"+m+"n"+n);
+	//alert(n === m)
+	//alert(n>3 && m>4);
+	if (m == 3){
+		//alert("yes")	;
+	}else{
+		//alert("no");
+	}
+	switch(str) {
+	 case "s":
+	 alert("a");
+	 break;
+	 case 12:
+	 alert("b");
+	 break;
+	 case "abc":
+	// alert("c");
+	 break;
+	 default:break;
+	 
+	}
+	
+	for (var x=0;x < 2; x++) {
+	//文本内容写到页面上
+		//document.write("x"+x+"<br/>");
+	}
+	var a = 1;
+	while(a < 3){
+	 //alert("aaa");
+	// document.write("a="+a+"<br/>");
+	 a++;
+	}
+	//9*9乘法表
+	document.write("<table border='1' width='200px' cellpadding='5'>")
+	for(var x=1;x<=9;x++){
+		document.write("<tr>");
+		for(var y=1;y<=x;y++){
+			document.write("<td>"+x+"*"+y+"="+x*y+"</td> ")
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+	
+	var arr=[3,4,5];
+	arr[4] = "an";
+	var arr = new Array(3,4,5);
+	//document.write("数组长度"+arr.length);
+	for(var x=0; x<arr.length;x++){
+	    document.write("arr["+x+"]"+"="+arr[x]+"<br/>");
+	}
+	//函数
+	function run(){
+		alert("函数");
+		return;
+	}
+	
+	//调用函数
+	run();
+	
+	function run2(x,y)  {
+		var result = x+y;
+		return result;
+	}
+	var sun = run2(3,4);
+	//document.write("sum="+sun);
+	println("sum="+sun);
+	
+	function demo(z,y){
+	  alert(z+":"+y);
+	  println("数组的长度"+arguments.length);
+	  for(var x=0;x<arguments.length;x++){
+	  	print(arguments[x]+" ");
+	  }
+	}
+	demo(4,5,6,7,8,9);
+	
+	function getSun(){
+		return 100;
+	}
+	sum = getSun;
+	alert("sum="+sum);
+	//println("sum="+sum);
+	
+	var add = new function("x,y","var sum; sum = x+y; return sum");
+	var sum = add(4,5);
+	println("动态sum" + sum);
+	
+	var add3 = function (x,y){
+		var sum; sum = x+y; return sum;
+	}
+	var sum2 = add3(4,5);
+	println("匿名sum" + sum2);
+	</script>
+  </head>
+  
+  <body>
+    <span id="spanId">span区域</span>
+    
+  </body>
+</html>
